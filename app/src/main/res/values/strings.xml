@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SpeakingTranslator</string>
+    <string name="hint_text">Message</string>
+    <string name="english">English</string>
+    <string name="yoruba">Yoruba</string>
+    <string name="splash_page">English - Yoruba Translator with Speech to Text Recognition</string>
+    <string name="translate">Translate</string>
+    <string name="no_connection">No internet connection! Cannot be translated!</string>
+    <string name="eng">Eng</string>
+    <string name="yor">Yor</string>
+    <string name="sms_sent">SMS Sent</string>
+    <string name="sms_send_failed_try_again">SMS Failed</string>
+    <string name="sms_delivered">Message Delivered</string>
+    <string name="sms_not_delivered">Message not delivered</string>
+    <string name="sms_sending">Sending Message</string>
+    <string name="no_service_sms_failed">No Service, SMS Failded</string>
+    <string name="phone">Phone Number</string>
+    <string name="send">Send Message</string>
+    <string name="translator">Translator</string>
+</resources>

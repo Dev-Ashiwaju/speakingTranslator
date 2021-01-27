@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cont"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/msglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbackground"
+        android:layout_margin="15dp"
+        app:boxBackgroundMode="none"
+        android:layout_alignParentTop="true"
+        android:hint="@string/hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:maxLines="10"
+            android:gravity="top|left"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btns"
+        android:orientation="horizontal"
+        android:layout_below="@+id/msglayout"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/material_icon_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B10441"
+            android:text="@string/eng"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_send_black"/>
+
+        <Button
+            android:id="@+id/material_icon_translate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B10441"
+            android:text="@string/translate"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:drawableStart="@android:drawable/ic_popup_sync"/>
+        <Button
+            android:id="@+id/material_icon_yoruba"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B10441"
+            android:text="@string/yor"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:drawableStart="@android:drawable/ic_lock_silent_mode_off"/>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/translayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbackground"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/btns"
+        app:boxBackgroundMode="none"
+        android:hint="@string/yoruba">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:maxLines="10"
+            android:gravity="top|left"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/material_icon_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_background"
+        android:layout_marginRight="30dp"
+        android:textSize="30sp"
+        app:iconSize="50sp"
+        app:iconTint="#fff" />
+
+    <Button
+        android:id="@+id/material_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/translayout"
+        android:backgroundTint="#B10441"
+        android:text="@string/send"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:drawableStart="@android:drawable/ic_popup_sync"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
